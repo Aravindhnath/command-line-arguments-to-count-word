@@ -18,7 +18,18 @@ Use len() to find the total words.
 ### Step 6: 
 Run the program to determine the number of words in the file created.
 ## PROGRAM:
-
+```
+#program is developed: ARAVINDHNATH T R
+# REF.NO: 22009024
+import sys
+count= 0
+with open(sys.argv[1],'r') as file:
+    for line in file:
+        word= line.split()
+        count += len(word)
+print("program is developed: ARAVINDHNATH.T.R")
+print("word count in file = ",count)
+```
 ### OUTPUT:
 ![WhatsApp Image 2023-01-25 at 20 42 25](https://user-images.githubusercontent.com/118790841/214719660-6f8d84d6-6b94-4e2f-badc-7f26768b0413.jpg)
 ![WhatsApp Image 2023-01-25 at 20 01 34](https://user-images.githubusercontent.com/118790841/214719603-ad7b7be0-d20f-413b-bdea-d7a4f60b6ef8.jpg)
